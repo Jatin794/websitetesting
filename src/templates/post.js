@@ -44,13 +44,13 @@ const Post = ({ data, location }) => {
                         </section>
                     </article>
                 </div>
-                <div class="commentbox"></div>
             </Layout>
         </>
     )
 }
 
 commentBox('5681385700327424-proj');
+<div class="commentbox"></div>
 
 Post.propTypes = {
     data: PropTypes.shape({
