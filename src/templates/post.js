@@ -49,8 +49,6 @@ const Post = ({ data, location }) => {
     )
 }
 
-commentBox('5681385700327424-proj');
-
 Post.propTypes = {
     data: PropTypes.shape({
         ghostPost: PropTypes.shape({
