@@ -42,6 +42,18 @@ const Page = ({ data, location }) => {
     )
 }
 
+import commentBox from 'commentbox.io';
+const BlogPostTemplate = ()=>{
+  useEffect(() =>{
+    commentBox('5681385700327424-proj')
+  },[])
+
+  return(
+     <div className="commentbox" />
+  )
+
+}
+
 Page.propTypes = {
     data: PropTypes.shape({
         ghostPage: PropTypes.shape({

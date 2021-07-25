@@ -49,24 +49,15 @@ const Post = ({ data, location }) => {
     )
 }
 
-class PageWithComments extends React.Component {
+const BlogPostTemplate = ()=>{
+  useEffect(() =>{
+    commentBox('5681385700327424-proj')
+  },[])
 
-    componentDidMount() {
+  return(
+     <div className="commentbox" />
+  )
 
-        this.removeCommentBox = commentBox('5681385700327424-proj');
-    }
-
-    componentWillUnmount() {
-
-        this.removeCommentBox();
-    }
-
-    render() {
-
-        return (
-            <div className="commentbox" />
-        );
-    }
 }
 
 Post.propTypes = {
