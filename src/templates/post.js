@@ -50,7 +50,6 @@ const Post = ({ data, location }) => {
 }
 
 commentBox('5681385700327424-proj');
-<div class="commentbox"></div>
 
 Post.propTypes = {
     data: PropTypes.shape({
