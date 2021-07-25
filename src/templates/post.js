@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
+import commentBox from 'commentbox.io'
 
 import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
@@ -46,6 +47,26 @@ const Post = ({ data, location }) => {
             </Layout>
         </>
     )
+}
+
+class PageWithComments extends React.Component {
+
+    componentDidMount() {
+
+        this.removeCommentBox = commentBox('5681385700327424-proj');
+    }
+
+    componentWillUnmount() {
+
+        this.removeCommentBox();
+    }
+
+    render() {
+
+        return (
+            <div className="commentbox" />
+        );
+    }
 }
 
 Post.propTypes = {
