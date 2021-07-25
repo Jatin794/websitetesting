@@ -44,21 +44,13 @@ const Post = ({ data, location }) => {
                         </section>
                     </article>
                 </div>
+                <div class="commentbox"></div>
             </Layout>
         </>
     )
 }
 
-const BlogPostTemplate = ()=>{
-  useEffect(() =>{
-    commentBox('5681385700327424-proj')
-  },[])
-
-  return(
-     <div className="commentbox" />
-  )
-
-}
+commentBox('5681385700327424-proj');
 
 Post.propTypes = {
     data: PropTypes.shape({
